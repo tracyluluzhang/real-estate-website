@@ -22,16 +22,16 @@ export default function Home() {
           <p className="text-2xl md:text-3xl lg:text-4xl font-cormorant tracking-wide max-w-4xl mx-auto mb-16">
             Your Gateway to Exceptional Properties
           </p>
-          <div className="space-x-8">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8">
             <Link 
               href="/team" 
-              className="inline-block px-10 py-4 bg-white bg-opacity-20 backdrop-blur-sm text-white border border-white rounded-sm font-cormorant text-xl tracking-wider hover:bg-opacity-30 transition-all"
+              className="w-full sm:w-auto px-10 py-4 bg-white bg-opacity-20 backdrop-blur-sm text-white border border-white rounded-sm font-cormorant text-xl tracking-wider hover:bg-opacity-30 transition-all"
             >
               Meet Our Team
             </Link>
             <Link 
               href="/contact" 
-              className="inline-block px-10 py-4 bg-white text-black rounded-sm font-cormorant text-xl tracking-wider hover:bg-opacity-90 transition-all"
+              className="w-full sm:w-auto px-10 py-4 bg-white text-black rounded-sm font-cormorant text-xl tracking-wider hover:bg-opacity-90 transition-all"
             >
               Contact Us
             </Link>
