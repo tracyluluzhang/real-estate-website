@@ -10,11 +10,11 @@ export default function Navbar() {
     <nav className="fixed w-full bg-white bg-opacity-95 shadow-md z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-2xl font-bold text-gray-800">
-            立捷地产
+          <Link href="/" className="text-6xl font-cormorant italic font-medium text-gray-800">
+            Dream Estates
           </Link>
 
-          {/* 移动端菜单按钮 */}
+          {/* Mobile menu button */}
           <button
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -43,30 +43,30 @@ export default function Navbar() {
             </svg>
           </button>
 
-          {/* 桌面端菜单 */}
+          {/* Desktop menu */}
           <div className="hidden md:flex space-x-8">
             <Link
               href="/"
               className="text-gray-600 hover:text-gray-900 transition-colors"
             >
-              首页
+              Home
             </Link>
             <Link
               href="/team"
               className="text-gray-600 hover:text-gray-900 transition-colors"
             >
-              团队介绍
+              Team Introduction
             </Link>
             <Link
               href="/contact"
               className="text-gray-600 hover:text-gray-900 transition-colors"
             >
-              联系我们
+              Contact Us
             </Link>
           </div>
         </div>
 
-        {/* 移动端菜单 */}
+        {/* Mobile menu */}
         <div
           className={`md:hidden ${
             isMenuOpen ? 'block' : 'hidden'
@@ -76,19 +76,19 @@ export default function Navbar() {
             href="/"
             className="block py-2 text-gray-600 hover:text-gray-900"
           >
-            首页
+            Home
           </Link>
           <Link
             href="/team"
             className="block py-2 text-gray-600 hover:text-gray-900"
           >
-            团队介绍
+            Team Introduction
           </Link>
           <Link
             href="/contact"
             className="block py-2 text-gray-600 hover:text-gray-900"
           >
-            联系我们
+            Contact Us
           </Link>
         </div>
       </div>

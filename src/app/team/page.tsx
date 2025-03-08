@@ -6,35 +6,35 @@ import Image from 'next/image';
 const teamMembers = [
   {
     id: 1,
-    name: '张明',
-    title: '首席房地产顾问',
+    name: 'Angela Wu',
+    title: 'Real Estate Agent',
     image: '/team/agent1.jpg',
-    description: '拥有15年豪宅销售经验，专注于高端物业交易',
+    description: 'Specializing in luxury properties with over 15 years of experience in high-end real estate.',
   },
   {
     id: 2,
-    name: '李婷',
-    title: '资深房地产经纪',
+    name: 'Grace Zhang',
+    title: 'Real Estate Agent',
     image: '/team/agent2.jpg',
-    description: '擅长别墅和公寓市场，为客户提供专业的购房建议',
+    description: 'Expert in residential properties and investment opportunities in prime locations.',
   },
   {
     id: 3,
-    name: '王强',
-    title: '投资策略专家',
+    name: 'Tracy Zhang',
+    title: 'Real Estate Agent',
     image: '/team/agent3.jpg',
-    description: '专注房地产投资分析，帮助客户做出明智的投资决策',
+    description: 'Focused on real estate investment analysis, helping clients make informed investment decisions.',
   },
 ];
 
 export default function Team() {
   return (
     <main className="min-h-screen bg-white py-20">
-      <div className="container mx-auto px-6 max-w-7xl">
+      <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">我们的团队</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            专业的房地产顾问团队，为您提供一站式购房服务
+          <h1 className="text-4xl md:text-6xl font-cormorant italic font-medium text-black mb-6">Our Team</h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto font-cormorant font-light tracking-wide">
+            Meet our experienced team of real estate professionals dedicated to finding your perfect home
           </p>
         </div>
         
@@ -42,7 +42,7 @@ export default function Team() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:translate-y-[-8px] transition-all duration-300"
+              className="bg-white text-black rounded-xl shadow-lg overflow-hidden transform hover:translate-y-[-8px] transition-all duration-300"
             >
               <div className="relative h-72">
                 <Image
@@ -54,9 +54,9 @@ export default function Team() {
                 />
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-black mb-2">{member.name}</h3>
-                <p className="text-blue-600 font-semibold mb-4">{member.title}</p>
-                <p className="text-gray-600 leading-relaxed">{member.description}</p>
+                <h3 className="text-2xl font-cormorant italic font-medium mb-2">{member.name}</h3>
+                <p className="text-gray-600 font-cormorant tracking-wide mb-4">{member.title}</p>
+                {/* <p className="text-gray-600 font-cormorant tracking-wide leading-relaxed">{member.description}</p> */} 
               </div>
             </div>
           ))}

@@ -13,6 +13,11 @@ module.exports = {
       textColor: {
         'page': 'var(--foreground)',
       },
+      fontFamily: {
+        playfair: ['var(--font-playfair)'],
+        montserrat: ['var(--font-montserrat)'],
+        cormorant: ['var(--font-cormorant)'],
+      },
     },
   },
   plugins: [],
