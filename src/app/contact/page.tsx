@@ -20,8 +20,18 @@ export default function Contact() {
                 <h2 className="text-3xl font-bold mb-8 text-black">联系方式</h2>
                 <div className="space-y-6">
                   <p className="flex items-center">
-                    <svg className="w-7 h-7 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className="w-7 h-7 mr-4" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                    >
+                      <rect x="2" y="4" width="20" height="16" rx="2"/>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
                     </svg>
                     <span className="text-lg">realtor.dreamestates@gmail.com</span>
                   </p>
