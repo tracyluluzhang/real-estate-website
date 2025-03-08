@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="fixed w-full bg-white bg-opacity-95 shadow-md z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-6xl font-cormorant italic font-medium text-gray-800">
+          <Link href="/" className="text-4xl font-cormorant italic text-gray-800">
             Dream Estates
           </Link>
 
